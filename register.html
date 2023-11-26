@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <!-- Updated Bootstrap CDN links for version 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.1/dist/sweetalert2.min.css">
+</head>
+
+<body>
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="col-md-6">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <!-- Add your signup form fields here -->
+        <div class="mb-3">
+          <label for="username" class="form-label">Username:</label>
+          <input type="text" id="username" name="username" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="validationDefaultEmail" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="validationDefaultEmail" name="email" placeholder="Email" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password:</label>
+          <input type="password" id="password" name="pass" class="form-control" required>
+      </div>
+      
+
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Confirm Password:</label>
+          <input type="password" id="confirmPassword" name="password" class="form-control" required>
+      </div>
+      
+
+        <button type="button" id="submitBtn" class="btn btn-primary">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Updated Bootstrap and jQuery scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.1/dist/sweetalert2.min.js"></script>
+    <!-- Your custom script -->
+    <script src="js/register.js"></script>
+</body>
+
+</html>
